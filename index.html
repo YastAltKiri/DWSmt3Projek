@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhysioCare - Layanan Fisioterapi ke Rumah</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo"></div>
+                <nav>
+                    <a href="index.html" class="active-page">Home</a>
+                    <a href="rincianPaket.html">Paket Layanan</a>
+                    <a href="profil.html">Profile Terapis</a>
+                    <a href="informasi.html">Informasi Fisio</a>
+                    <a href="blog.html">Blog</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>PhysioCare - Fisioterapi ke Rumah Anda</h1>
+                <p>Layanan fisioterapi profesional yang datang langsung ke rumah Anda. Khusus untuk pasien lansia, pasca operasi, stroke, dan yang membutuhkan perawatan khusus.</p>
+                <a href="rincianPaket.html" class="cta-button">Lihat Layanan Kami</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cards-section" id="services">
+        <div class="container">
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-icon"><ion-icon name="fitness"></ion-icon></div>
+                    <h3>PAKET DASAR <br>(Essential Care)</h3>
+                    <p>Fokus: Assessment mendalam dan penanganan dasar untuk mengurangi nyeri dan meningkatkan rentang gerak.</p>
+                    <p class="price">Rp 150.000 / sesi</p>
+                    <button class="card-btn btn-1" onclick="scrollToForm()">Pesan Sekarang</button>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon"><ion-icon name="heart-circle"></ion-icon></div>
+                    <h3>PAKET AKTIF <br>(Active Recovery)</h3>
+                    <p>Fokus: Program terapi yang lebih intensif untuk mengembalikan kekuatan, daya tahan, dan fungsi tubuh dalam beraktivitas sehari-hari.</p>
+                    <p class="price">Rp 250.000 / sesi</p>
+                    <button class="card-btn btn-2" onclick="scrollToForm()">Pesan Sekarang</button>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon"><ion-icon name="diamond"></ion-icon></div>
+                    <h3>PAKET PREMIUM <br>(Comprehensive Wellness)</h3>
+                    <p>Fokus: Pendekatan holistik yang menggabungkan rehabilitasi fisik dengan perencanaan jangka panjang untuk menjaga kesehatan dan mencegah kekambuhan.</p>
+                    <p class="price">Rp 350.000 / sesi</p>
+                    <button class="card-btn btn-3" onclick="scrollToForm()">Pesan Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="therapists-section" id="therapists">
+        <div class="container">
+            <h2>Tim Terapis Kami</h2>
+            <div class="therapists-container">
+                <div class="therapist-card">
+                    <div class="therapist-img-1"></div>
+                    <h3>Dr. Alfin Romi Setiawan</h3>
+                    <p>Spesialis Rehabilitasi Medis</p>
+                    <span class="therapist-specialty">Stroke & Lansia</span>
+                </div>
+                
+                <div class="therapist-card">
+                    <div class="therapist-img-2"></div>
+                    <h3>Joanne Trixie Isaura, S.Ft</h3>
+                    <p>Fisioterapis Profesional</p>
+                    <span class="therapist-specialty">Pasca Operasi</span>
+                </div>
+                
+                <div class="therapist-card">
+                    <div class="therapist-img-3"></div>
+                    <h3>Riast Dwi Sanditya, S.Ft</h3>
+                    <p>Fisioterapis Olahraga</p>
+                    <span class="therapist-specialty">Cedera Olahraga</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="content-section" id="about">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="content-image"></div>
+                <div class="content-text">
+                    <h2>Tentang PhysioCare</h2>
+                    <p>PhysioCare hadir sebagai solusi bagi pasien yang membutuhkan layanan fisioterapi namun mengalami kesulitan untuk datang ke klinik. Kami memahami bahwa perjalanan pulih sering terhambat oleh berbagai rintangan, terutama bagi lansia, pasca operasi, atau pasien stroke.</p>
+                    <p>Dengan tim terapis profesional yang berpengalaman, kami memberikan layanan fisioterapi langsung ke rumah Anda. Setiap sesi terapi dirancang khusus sesuai kebutuhan dan kondisi pasien.</p>
+                    <button class="content-btn" onclick="scrollToForm()">Konsultasi Gratis</button>
+                </div>
+            </div>
+        </div>
+    </section>
+     
+    <section id="form">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-container">
+                    <h2>Pesan Layanan Fisioterapi</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Nomor Telepon</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Alamat Lengkap</label>
+                            <textarea id="address" name="address" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="package">Pilih Paket Layanan</label>
+                            <select id="package" name="package" required>
+                                <option value="">-- Pilih Paket --</option>
+                                <option value="dasar">Paket Dasar (Essential Care) - Rp 150.000/sesi</option>
+                                <option value="aktif">Paket Aktif (Active Recovery) - Rp 250.000/sesi</option>
+                                <option value="premium">Paket Premium (Comprehensive Wellness) - Rp 350.000/sesi</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="condition">Kondisi/Keluhan</label>
+                            <textarea id="condition" name="condition" required placeholder="Jelaskan kondisi atau keluhan yang dialami"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="preferred-date">Tanggal yang Diinginkan</label>
+                            <input type="date" id="preferred-date" name="preferred-date" required>
+                        </div>
+                        <button type="submit" class="submit-btn">Pesan Sekarang</button>
+                    </form>
+                </div>
+                
+                <div class="services-info">
+                    <h2>Mengapa Memilih PhysioCare?</h2>
+                    <p>Kami berkomitmen memberikan layanan fisioterapi terbaik dengan pendekatan personal dan profesional.</p>
+                    
+                    <div class="service-feature">
+                        <div class="feature-icon"><ion-icon name="home"></ion-icon></div>
+                        <div class="feature-text">
+                            <h4>Layanan ke Rumah</h4>
+                            <p>Terapis datang langsung ke rumah Anda, tidak perlu repot pergi ke klinik.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-feature">
+                        <div class="feature-icon"><ion-icon name="calendar"></ion-icon></div>
+                        <div class="feature-text">
+                            <h4>Fleksibel Waktu</h4>
+                            <p>Jadwal sesi terapi dapat disesuaikan dengan kebutuhan dan kenyamanan Anda.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-feature">
+                        <div class="feature-icon"><ion-icon name="school"></ion-icon></div>
+                        <div class="feature-text">
+                            <h4>Terapis Berpengalaman</h4>
+                            <p>Tim terapis profesional dengan sertifikasi dan pengalaman di bidangnya.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-feature">
+                        <div class="feature-icon"><ion-icon name="cash"></ion-icon></div>
+                        <div class="feature-text">
+                            <h4>Konsultasi Gratis</h4>
+                            <p>Konsultasi awal gratis untuk memahami kebutuhan dan kondisi Anda.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PhysioCare</h3>
+                    <p>Layanan fisioterapi profesional ke rumah Anda. Solusi tepat untuk pemulihan dan perawatan kesehatan.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Kontak Kami</h3>
+                    <p><ion-icon name="call"></ion-icon> (021) 1234-5678</p>
+                    <p><ion-icon name="mail"></ion-icon> info@physiocare.id</p>
+                    <p><ion-icon name="map"></ion-icon> Jakarta, Indonesia</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Link Cepat</h3>
+                    <a href="index.html"><ion-icon name="home"></ion-icon> Home</a>
+                    <a href="rincianPaket.html"><ion-icon name="cube"></ion-icon> Paket Layanan</a>
+                    <a href="profil.html"> <ion-icon name="people-circle"></ion-icon> Profile Terapis</a>
+                    <a href="informasi.html"> <ion-icon name="alert-circle"></ion-icon> Informasi Fisio</a>
+                    <a href="blog.html"> <ion-icon name="newspaper"></ion-icon> Blog</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 PhysioCare. All Rights Reserved. | Kelompok 2 - UAS Desain Web</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom Navigation - IMPROVED -->
+    <div class="mobile-nav">
+        <div class="mobile-nav-container">
+            <a href="index.html" class="mobile-nav-item current-page">
+                <i><ion-icon name="home"></ion-icon></i>
+                <span>Home</span>
+            </a>
+            <a href="rincianPaket.html" class="mobile-nav-item">
+                <i><ion-icon name="cube"></ion-icon></i>
+                <span>Paket</span>
+            </a>
+            <a href="profil.html" class="mobile-nav-item">
+                <i><ion-icon name="people-circle"></ion-icon></i>
+                <span>Terapis</span>
+            </a>
+            <a href="informasi.html" class="mobile-nav-item">
+                <i><ion-icon name="alert-circle"></ion-icon></i>
+                <span>Info</span>
+            </a>
+            <a href="blog.html" class="mobile-nav-item">
+                <i><ion-icon name="newspaper"></ion-icon></i>
+                <span>Blog</span>
+            </a>
+        </div>
+    </div>
+    <!-- PACK ICON -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!--  -->
+    <script>
+    function scrollToForm() {
+        document.getElementById('form').scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Terima kasih! Pesanan Anda telah berhasil dikirim. Tim kami akan menghubungi Anda dalam 1x24 jam.');
+        this.reset();
+    });
+
+    // Improved mobile navigation with persistent current page highlight
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        
+        // Set current page highlight
+        mobileNavItems.forEach(item => {
+            const href = item.getAttribute('href');
+            if (href === currentPage) {
+                item.classList.add('current-page');
+            }
+        });
+
+        // Update active state based on scroll position (for internal links)
+        if (window.location.hash) {
+            const targetSection = document.querySelector(window.location.hash);
+            if (targetSection) {
+                updateMobileNavActiveState(targetSection.id);
+            }
+        }
+    });
+
+    // Function to update mobile nav active state
+    function updateMobileNavActiveState(sectionId) {
+        const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+        
+        mobileNavItems.forEach(item => {
+            item.classList.remove('active');
+            
+            // Map section IDs to corresponding nav items
+            const href = item.getAttribute('href');
+            if ((sectionId === 'home' && href === 'index.html') ||
+                (sectionId === 'services' && href === 'rincianPaket.html') ||
+                (sectionId === 'therapists' && href === 'profil.html') ||
+                (sectionId === 'about' && href === 'informasi.html')) {
+                item.classList.add('active');
+            }
+        });
+    }
+
+    // Smooth scrolling for mobile nav items
+    document.querySelectorAll('.mobile-nav-item').forEach(item => {
+        item.addEventListener('click', function(e) {
+            // Remove active class from all items
+            document.querySelectorAll('.mobile-nav-item').forEach(navItem => {
+                navItem.classList.remove('active');
+            });
+            
+            // Add active class to clicked item
+            this.classList.add('active');
+            
+            // Handle internal links with smooth scroll
+            const href = this.getAttribute('href');
+            if (href.startsWith('#')) {
+                e.preventDefault();
+                const targetElement = document.querySelector(href);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+    </script>
+</body>
+</html>

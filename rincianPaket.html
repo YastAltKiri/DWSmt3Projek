@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rincian Paket - PhysioCare</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo"></div>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="rincianPaket.html" class="active-page">Paket Layanan</a>
+                    <a href="profil.html">Profile Terapis</a>
+                    <a href="informasi.html">Informasi Fisio</a>
+                    <a href="blog.html">Blog</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Paket Layanan PhysioCare</h1>
+                <p>Pilih paket fisioterapi yang sesuai dengan kebutuhan Anda. Semua paket termasuk layanan kunjungan ke rumah oleh terapis profesional.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="packages-section" id="packages">
+        <div class="container">
+            <div class="packages-container">
+                <!-- Paket 1 -->
+                <div class="package-block package-1">
+                    <div class="package-info">
+                        <h2>PAKET DASAR (Essential Care)</h2>
+                        <p class="package-description">Paket ideal untuk pemula atau mereka yang membutuhkan penanganan dasar untuk mengurangi nyeri dan meningkatkan mobilitas.</p>
+                        
+                        <div class="package-features">
+                            <h3>Yang termasuk dalam paket:</h3>
+                            <ul class="feature-list">
+                                <li>Assessment kondisi fisik menyeluruh</li>
+                                <li>Terapi manual untuk mengurangi nyeri</li>
+                                <li>Latihan rentang gerak dasar</li>
+                                <li>Edukasi postur tubuh yang benar</li>
+                                <li>Durasi 60 menit per sesi</li>
+                                <li>Laporan perkembangan berkala</li>
+                            </ul>
+                        </div>
+                        
+                        <button class="package-btn" onclick="scrollToForm()">Pesan Paket Ini</button>
+                    </div>
+                    
+                    <div class="package-highlight">
+                        <div class="package-icon"><ion-icon name="fitness"></ion-icon></div>
+                        <div class="package-price">Rp 150.000</div>
+                        <div class="package-duration">/ sesi</div>
+                    </div>
+                </div>
+                
+                <!-- Paket 2 -->
+                <div class="package-block package-2">
+                    <div class="package-info">
+                        <h2>PAKET AKTIF (Active Recovery)</h2>
+                        <p class="package-description">Untuk mereka yang membutuhkan rehabilitasi lebih intensif untuk mengembalikan fungsi tubuh dalam aktivitas sehari-hari.</p>
+                        
+                        <div class="package-features">
+                            <h3>Yang termasuk dalam paket:</h3>
+                            <ul class="feature-list">
+                                <li>Semua fitur Paket Dasar</li>
+                                <li>Program latihan kekuatan dan daya tahan</li>
+                                <li>Terapi modalitas (jika diperlukan)</li>
+                                <li>Latihan fungsional untuk aktivitas sehari-hari</li>
+                                <li>Durasi 75 menit per sesi</li>
+                                <li>Konsultasi nutrisi dasar</li>
+                                <li>Panduan latihan mandiri</li>
+                            </ul>
+                        </div>
+                        
+                        <button class="package-btn" onclick="scrollToForm()">Pesan Paket Ini</button>
+                    </div>
+                    
+                    <div class="package-highlight">
+                        <div class="package-icon"><ion-icon name="heart-circle"></ion-icon></div>
+                        <div class="package-price">Rp 250.000</div>
+                        <div class="package-duration">/ sesi</div>
+                    </div>
+                </div>
+                
+                <!-- Paket 3 -->
+                <div class="package-block package-3">
+                    <div class="package-info">
+                        <h2>PAKET PREMIUM (Comprehensive Wellness)</h2>
+                        <p class="package-description">Pendekatan holistik untuk pemulihan optimal dan pencegahan kekambuhan dengan perencanaan jangka panjang.</p>
+                        
+                        <div class="package-features">
+                            <h3>Yang termasuk dalam paket:</h3>
+                            <ul class="feature-list">
+                                <li>Semua fitur Paket Aktif</li>
+                                <li>Assessment biomekanik lengkap</li>
+                                <li>Program pencegahan cedera</li>
+                                <li>Konsultasi gaya hidup sehat</li>
+                                <li>Durasi 90 menit per sesi</li>
+                                <li>Akses hotline 24/7 untuk konsultasi darurat</li>
+                                <li>Rencana perawatan jangka panjang</li>
+                                <li>Sesi follow-up gratis setelah 1 bulan</li>
+                            </ul>
+                        </div>
+                        
+                        <button class="package-btn" onclick="scrollToForm()">Pesan Paket Ini</button>
+                    </div>
+                    
+                    <div class="package-highlight">
+                        <div class="package-icon"><ion-icon name="diamond"></ion-icon></div>
+                        <div class="package-price">Rp 350.000</div>
+                        <div class="package-duration">/ sesi</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="booking-form">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-container">
+                    <h2>Pesan Layanan Fisioterapi</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Nomor Telepon</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Alamat Lengkap</label>
+                            <textarea id="address" name="address" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="package">Pilih Paket Layanan</label>
+                            <select id="package" name="package" required>
+                                <option value="">-- Pilih Paket --</option>
+                                <option value="dasar">Paket Dasar (Essential Care) - Rp 150.000/sesi</option>
+                                <option value="aktif">Paket Aktif (Active Recovery) - Rp 250.000/sesi</option>
+                                <option value="premium">Paket Premium (Comprehensive Wellness) - Rp 350.000/sesi</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="condition">Kondisi/Keluhan</label>
+                            <textarea id="condition" name="condition" required placeholder="Jelaskan kondisi atau keluhan yang dialami"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="preferred-date">Tanggal yang Diinginkan</label>
+                            <input type="date" id="preferred-date" name="preferred-date" required>
+                        </div>
+                        <button type="submit" class="submit-btn">Pesan Sekarang</button>
+                    </form>
+                </div>
+                
+                <div class="services-info">
+                    <h2>Mengapa Memilih PhysioCare?</h2>
+                    <p>Kami berkomitmen memberikan layanan fisioterapi terbaik dengan pendekatan personal dan profesional.</p>
+                    
+                    <div class="service-feature">
+                        <div class="feature-icon"><ion-icon name="home"></ion-icon></div>
+                        <div class="feature-text">
+                            <h4>Layanan ke Rumah</h4>
+                            <p>Terapis datang langsung ke rumah Anda, tidak perlu repot pergi ke klinik.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-feature">
+                        <div class="feature-icon"><ion-icon name="calendar"></ion-icon></div>
+                        <div class="feature-text">
+                            <h4>Fleksibel Waktu</h4>
+                            <p>Jadwal sesi terapi dapat disesuaikan dengan kebutuhan dan kenyamanan Anda.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-feature">
+                        <div class="feature-icon"><ion-icon name="school"></ion-icon></div>
+                        <div class="feature-text">
+                            <h4>Terapis Berpengalaman</h4>
+                            <p>Tim terapis profesional dengan sertifikasi dan pengalaman di bidangnya.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-feature">
+                        <div class="feature-icon"><ion-icon name="cash"></ion-icon></div>
+                        <div class="feature-text">
+                            <h4>Konsultasi Gratis</h4>
+                            <p>Konsultasi awal gratis untuk memahami kebutuhan dan kondisi Anda.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PhysioCare</h3>
+                    <p>Layanan fisioterapi profesional ke rumah Anda. Solusi tepat untuk pemulihan dan perawatan kesehatan.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Kontak Kami</h3>
+                    <p><ion-icon name="call"></ion-icon> (021) 1234-5678</p>
+                    <p><ion-icon name="mail"></ion-icon> info@physiocare.id</p>
+                    <p><ion-icon name="map"></ion-icon> Jakarta, Indonesia</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Link Cepat</h3>
+                    <a href="index.html"><ion-icon name="home"></ion-icon> Home</a>
+                    <a href="rincianPaket.html"><ion-icon name="cube"></ion-icon> Paket Layanan</a>
+                    <a href="profil.html"> <ion-icon name="people-circle"></ion-icon> Profile Terapis</a>
+                    <a href="informasi.html"> <ion-icon name="alert-circle"></ion-icon> Informasi Fisio</a>
+                    <a href="blog.html"> <ion-icon name="newspaper"></ion-icon> Blog</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 PhysioCare. All Rights Reserved. | Kelompok 2 - UAS Desain Web</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom Navigation - IMPROVED -->
+    <div class="mobile-nav">
+        <div class="mobile-nav-container">
+            <a href="index.html" class="mobile-nav-item">
+                <i><ion-icon name="home"></ion-icon></i>
+                <span>Home</span>
+            </a>
+            <a href="rincianPaket.html" class="mobile-nav-item current-page">
+                <i><ion-icon name="cube"></ion-icon></i>
+                <span>Paket</span>
+            </a>
+            <a href="profil.html" class="mobile-nav-item">
+                <i><ion-icon name="people-circle"></ion-icon></i>
+                <span>Terapis</span>
+            </a>
+            <a href="informasi.html" class="mobile-nav-item">
+                <i><ion-icon name="alert-circle"></ion-icon></i>
+                <span>Info</span>
+            </a>
+            <a href="blog.html" class="mobile-nav-item">
+                <i><ion-icon name="newspaper"></ion-icon></i>
+                <span>Blog</span>
+            </a>
+        </div>
+    </div>
+<!-- PACK ICON -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!--  -->
+    <script>
+        function scrollToForm() {
+            document.getElementById('booking-form').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Terima kasih! Pesanan Anda telah berhasil dikirim. Tim kami akan menghubungi Anda dalam 1x24 jam.');
+            this.reset();
+        });
+
+        // Improved mobile navigation with persistent current page highlight
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+            const currentPage = window.location.pathname.split('/').pop() || 'rincianPaket.html';
+            
+            // Set current page highlight
+            mobileNavItems.forEach(item => {
+                const href = item.getAttribute('href');
+                if (href === currentPage) {
+                    item.classList.add('current-page');
+                }
+            });
+        });
+
+        // Smooth scrolling for mobile nav items
+        document.querySelectorAll('.mobile-nav-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                // Remove active class from all items
+                document.querySelectorAll('.mobile-nav-item').forEach(navItem => {
+                    navItem.classList.remove('active');
+                });
+                
+                // Add active class to clicked item
+                this.classList.add('active');
+                
+                // Handle internal links with smooth scroll
+                const href = this.getAttribute('href');
+                if (href.startsWith('#')) {
+                    e.preventDefault();
+                    const targetElement = document.querySelector(href);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
